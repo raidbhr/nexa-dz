@@ -5,27 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>UFO Galaxy Projector | NEXA DZ</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;800;900&display=swap" rel="stylesheet">
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-// ⚠️ استبدل YOUR_PIXEL_ID برقم البيكسل الخاص بك هنا
-fbq('init', 'YOUR_PIXEL_ID'); 
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
 <style>
 :root {
     --bg: #0a1620;
@@ -176,6 +155,7 @@ footer { text-align: center; color: var(--mute); font-size: 13px; margin-top: 26
     <div class="logo"><i>NX</i>NEXA DZ</div>
 
     <div class="hero">
+        <!-- استبدل "product-image.jpg" بمسار الصورة الحقيقي الخاص بك -->
         <img src="product-image.jpg" alt="UFO Galaxy Projector">
         <a href="#order-form" class="cta">اطلب الآن</a>
     </div>
@@ -216,6 +196,7 @@ footer { text-align: center; color: var(--mute); font-size: 13px; margin-top: 26
             <option value="25">قسنطينة</option>
             <option value="06">بجاية</option>
             <option value="35">بومرداس</option>
+            <!-- يمكنك إضافة باقي الولايات حسب الحاجة -->
         </select>
         <button type="submit">تأكيد الطلب الآن</button>
     </form>
@@ -225,18 +206,6 @@ footer { text-align: center; color: var(--mute); font-size: 13px; margin-top: 26
     </footer>
 
 </main>
-
-<!-- تتبع طلب الشراء عند إرسال النموذج (Purchase Tracking) -->
-<script>
-document.getElementById('order-form').addEventListener('submit', function() {
-    if (typeof fbq !== 'undefined') {
-        fbq('track', 'Purchase', {
-            value: 4500,
-            currency: 'DZD'
-        });
-    }
-});
-</script>
 
 </body>
 </html>
